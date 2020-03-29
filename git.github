@@ -3,8 +3,11 @@
 # RUN ONCE
 # Run before git.setup
 # Run git.setup before creating in netlify
+# git.setup or this script, must add this to .gitignore
+
+grep -q git.gitub .gitignore 2&> /dev/null || echo git.github >> .gitignore
 
 build=celina2020station2
 repo="${build}.dfwskyview.com"
 
-curl -H "Authorization: token 5a7f0217d140b0ccab1c2e5331bc83dfb8c38d41" --data '{"name":"'$repo'"}' https://api.github.com/user/repos | grep name
+curl -H "Authorization: token 11e30081d0b5419ce46ee5bd70e79d8f4575d904" --data '{"name":"'$repo'"}' https://api.github.com/user/repos | grep name

@@ -16,4 +16,4 @@ git push
 
 echo
 echo
-echo after some time, confirm netlify at http://${netlify}.dfwskyview.com
+echo after some time, confirm netlify at https://${netlify}.dfwskyview.com
