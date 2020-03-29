@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# RUN ONCE
+# Run before git.setup
+# Run git.setup before creating in netlify
+
+build=celina2020station2
+repo="${build}.dfwskyview.com"
+
+curl -H "Authorization: token 5a7f0217d140b0ccab1c2e5331bc83dfb8c38d41" --data '{"name":"'$repo'"}' https://api.github.com/user/repos | grep name
