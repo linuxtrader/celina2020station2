@@ -1,2 +1,4 @@
 project.mobirise
 git.setup
+media/
+.DS_Store
